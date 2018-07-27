@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARKSMART"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#3F51B5"
+        android:layout_marginLeft="90dp"/>
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="142dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="139dp"
+        android:hint="Username"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/inputEmail"
+        android:layout_marginTop="198dp"
+        android:hint="Choose Password"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="148dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="204dp"
+        android:layout_marginStart="94dp"
+        android:text="Disabled?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="159dp"
+            android:layout_marginStart="86dp"
+            android:text="Yes"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/radioButton"
+            android:layout_marginEnd="115dp"
+            android:text="No"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="327dp" />
+    </RadioGroup>
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="133dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="79dp"
+            android:text="Submit"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="427dp" />
+
+</RelativeLayout>
